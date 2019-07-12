@@ -64,7 +64,7 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Buzz",result);
     }
     @Test
-    void should_get_Buzz_Given_7() {
+    void should_get_Whizz_Given_7() {
         //Given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int number = 7;
@@ -74,7 +74,7 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Whizz",result);
     }
     @Test
-    void should_get_Buzz_Given_14() {
+    void should_get_Whizz_Given_14() {
         //Given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int number = 14;
@@ -82,5 +82,15 @@ public class FizzBuzzTest {
         String result = fizzBuzz.convert(number);
         //Then
         Assertions.assertEquals("Whizz",result);
+    }
+    @Test
+    void should_get_FizzBuzz_Given_15() {
+        //Given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int number = 15;
+        //When
+        String result = fizzBuzz.convert(number);
+        //Then
+        Assertions.assertEquals("FizzBuzz",result);
     }
 }
