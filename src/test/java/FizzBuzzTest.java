@@ -43,4 +43,24 @@ public class FizzBuzzTest {
         //Then
         Assertions.assertEquals("Fizz",result);
     }
+    @Test
+    void should_get_Buzz_Given_5() {
+        //Given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int number = 5;
+        //When
+        String result = fizzBuzz.convert(number);
+        //Then
+        Assertions.assertEquals("Buzz",result);
+    }
+    @Test
+    void should_get_Buzz_Given_10() {
+        //Given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int number = 10;
+        //When
+        String result = fizzBuzz.convert(number);
+        //Then
+        Assertions.assertEquals("Buzz",result);
+    }
 }
