@@ -114,7 +114,7 @@ public class FizzBuzzTest {
         Assertions.assertEquals("BuzzWhizz",result);
     }
     @Test
-    void should_get_FizzBuzzWhizz_Given_35() {
+    void should_get_FizzBuzzWhizz_Given_105() {
         //Given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int number = 105;
