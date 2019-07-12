@@ -113,4 +113,14 @@ public class FizzBuzzTest {
         //Then
         Assertions.assertEquals("BuzzWhizz",result);
     }
+    @Test
+    void should_get_FizzBuzzWhizz_Given_35() {
+        //Given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int number = 105;
+        //When
+        String result = fizzBuzz.convert(number);
+        //Then
+        Assertions.assertEquals("FizzBuzzWhizz",result);
+    }
 }
